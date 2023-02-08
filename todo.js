@@ -30,7 +30,6 @@ addTask.addEventListener ('click', () => {
     btnOne.classList.add('btn-js');//adds a classname for btn 1
     btnTwo.classList.add('btn-js');//adds a classname for btn 2
 
-    btnOne.style.color = 'grey';
     btnTwo.style.color = 'red';
     taskContainer.append(div);//appends the div-box to the taskContainer
 
@@ -48,7 +47,9 @@ addTask.addEventListener ('click', () => {
         li.innerText = input.value;
         input.value = '';
     }else {
-        return alert('Textfield is empty!');
+        alert('Textfield is empty!');
+        btnTwo.parentElement.remove();
+
     }
 
     

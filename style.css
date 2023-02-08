@@ -20,7 +20,7 @@ section .container {
     left: 50%;
     transform: translate(-50%, -50%);
     height: fit-content;
-    width: 40vw;
+    width: 45vw;
     background-color: rgba(0, 0, 0, 0.247);
 
 }
@@ -32,9 +32,9 @@ section .container .heading {
 
 section .container .heading input {
     padding: 0.5em 0.9em;
-    margin: 0 1em;
+    margin: 0 0.05em;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     border: none;
     border: 1px solid grey;
     border-radius: 2px;
@@ -59,10 +59,9 @@ section .container .heading #add-task:hover {
 
 section .container .list-container {
     height: fit-content;
-    width:100%;
-    margin: 0.5em 0;
-    padding: 0.5em 0;
-    background-color: whitesmoke;
+    width: 100%;
+    margin: 0.2em 0;
+    /* background-color: whitesmoke; */
     
 }
 
@@ -73,6 +72,8 @@ section .container .list-container {
     align-items: center;
     justify-content: space-evenly;
     margin: 0.5em 0;
+    padding: 0.5em 0;
+    background-color: whitesmoke;
 }
 
 .list-style {
@@ -95,10 +96,12 @@ section .container .list-container {
     margin: 0 0.3em 0 0.5em;
     border: none;
     border-radius: 5px;
-    border: 1px solid black;
-    background-color: black;
+    color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.623);
 }
 
 .btn-js:hover {
-    background-color: whitesmoke;
+    background-color: rgb(214, 210, 210);
+    color: gray;
+    
 }
