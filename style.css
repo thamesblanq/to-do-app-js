@@ -12,6 +12,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: scroll;
 }
 
 section .container {
@@ -20,10 +21,26 @@ section .container {
     left: 50%;
     transform: translate(-50%, -50%);
     height: fit-content;
-    width: 45vw;
+    width: 300px;
     padding: 1em;
-    background-color: rgba(0, 0, 0, 0.247);
+    /* background-color: rgba(0, 0, 0, 0.247); */
+ 
+}
 
+section .container .header {
+    background-color: white;
+    height: 40px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    text-align: center;
+}
+
+section .container .header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    font-weight: 600;
 }
 
 section .container .heading {
@@ -47,9 +64,9 @@ section .container .heading #add-task {
     padding: 0 0.3em;
     font-size: 1.5rem;
     color: whitesmoke;
-    margin-left: 0.1em;
+    margin-left: 0.5em;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.623);
 }
 
@@ -59,35 +76,34 @@ section .container .heading #add-task:hover {
 }
 
 section .container .list-container {
-    height: fit-content;
+    height: 200px;
     width: 100%;
     margin: 0.5em 0 0 0;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke; 
+    overflow-y: scroll;
     
 }
 
 .new-list-container {
     width: inherit;
-    height: inherit;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 0.5em 0;
-    padding: 0.5em 0;
+    padding: 0.5em;
     background-color: whitesmoke;
 }
 
 .list-style {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.8rem;
     margin: 0 0.2em;
     padding: 0.5em;
     color: black;
     width: 70%;
     background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid gray;
     list-style-type: none;
     height: 50%;
 }
@@ -104,5 +120,12 @@ section .container .list-container {
 .btn-js:hover {
     background-color: rgb(214, 210, 210);
     color: gray;
+    
+}
+
+@media  screen and (min-width: 450px) {
+    section .container {
+        width: 400px;
+    }
     
 }

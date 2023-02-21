@@ -27,6 +27,8 @@ addTask.addEventListener ('click', () => {
     div.append(btnTwo);
 
     li.classList.add('list-style');//adds a classname for li
+    li.setAttribute("contenteditable", "true");//can be edited afetr being set
+    li.setAttribute("spellcheck", 'true');
     btnOne.classList.add('btn-js');//adds a classname for btn 1
     btnTwo.classList.add('btn-js');//adds a classname for btn 2
 
@@ -36,7 +38,11 @@ addTask.addEventListener ('click', () => {
     btnOne.addEventListener('click', () => {
         li.style.fontStyle = 'oblique';
         li.style.color = 'gray';
+        li.style.fontWeight = '500';
         li.style.textDecoration = 'line-through';
+        li.removeAttribute('contenteditable');
+        li.style.borderColor = 'red';
+        li.style.borderRadius = '3px';
     });
     
     btnTwo.addEventListener('click', () => {
