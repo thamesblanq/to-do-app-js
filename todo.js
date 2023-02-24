@@ -17,8 +17,8 @@ addTask.addEventListener ('click', () => {
 
     let btnOne = document.createElement('button');//create a new btn 1
     let btnTwo = document.createElement('button');// create a new btn 2
-    btnOne.innerText = "Strike";
-    btnTwo.innerText = "Del"
+    btnOne.innerText = "-";
+    btnTwo.innerText = "x"
 
 
 
@@ -70,8 +70,8 @@ input.addEventListener ('keyup', (event) => {
 
     let btnOne = document.createElement('button');//create a new btn 1
     let btnTwo = document.createElement('button');// create a new btn 2
-    btnOne.innerText = "Strike";
-    btnTwo.innerText = "Del"
+    btnOne.innerText = "-";
+    btnTwo.innerText = "x"
 
 
 

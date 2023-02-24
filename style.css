@@ -12,7 +12,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow: scroll;
 }
 
 section .container {
@@ -45,7 +44,7 @@ section .container .header h3 {
 
 section .container .heading {
     padding: 1em;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 section .container .heading input {
@@ -53,22 +52,28 @@ section .container .heading input {
     margin: 0 0.05em;
     display: inline-block;
     width: 80%;
+    height: 30px;
     border: none;
-    border: 1px solid grey;
-    border-radius: 2px;
+    border-radius: 30px;
     
 
+}
+
+section .container .heading input:focus{
+    outline: red;
 }
 
 section .container .heading #add-task {
     padding: 0 0.3em;
     font-size: 1.5rem;
     color: whitesmoke;
+    height: 30px;
     margin-left: 0.5em;
     border: none;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.623);
 }
+
 
 section .container .heading #add-task:hover {
     background-color: rgb(214, 210, 210);
@@ -76,11 +81,13 @@ section .container .heading #add-task:hover {
 }
 
 section .container .list-container {
-    height: 200px;
+    height: 158px;
     width: 100%;
     margin: 0.5em 0 0 0;
+    padding: 0.5em;
     background-color: whitesmoke; 
     overflow-y: scroll;
+    overflow-x: hidden;
     
 }
 
@@ -89,32 +96,31 @@ section .container .list-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 0.5em 0;
+    margin: 0.3em;
     padding: 0.5em;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .list-style {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
     font-size: 0.8rem;
-    margin: 0 0.2em;
     padding: 0.5em;
     color: black;
     width: 70%;
-    background-color: whitesmoke;
-    border: 1px solid gray;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 2px black;
     list-style-type: none;
     height: 50%;
 }
 
 .btn-js {
-    padding: 0.25em 0.5em;
-    margin: 0 0.3em 0 0.5em;
+    padding: 0.5em 1em;
+    margin: 0 0.2em;
     border: none;
     border-radius: 5px;
     color: rgba(0, 0, 0, 0.863);
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.423);
 }
 
 .btn-js:hover {
